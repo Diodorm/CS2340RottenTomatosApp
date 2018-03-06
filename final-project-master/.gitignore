@@ -1,0 +1,13 @@
+# intellij files
+*.iws
+/.idea/workspace.xml
+/.idea/libraries
+/local.properties
+.gradle/*
+# OSX files
+.DS_Store
+# executables
+build/*
+*.apk
+*.class
+*.jar

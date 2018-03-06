@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alexa.finalproject">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- For Volley -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".NavigationalMenu" />
+        <activity
+            android:name=".ProfileView"
+            android:label="User Profile"/>
+        <activity
+            android:name=".ProfileEditor"
+            android:label="Edit Profile">
+        </activity>
+        <activity
+            android:name=".SearchMovies"
+            android:label="Search Movies">
+        </activity>
+        <activity
+            android:name=".NewReleases"
+            android:label="New Releases">
+        </activity>
+        <activity
+            android:name=".NewDVDs"
+            android:label="New DVD's">
+        </activity>
+        <activity
+            android:name=".Recommendations"
+            android:label="Recommendations">
+        </activity>
+        <activity
+            android:name=".MovieView"
+            android:label="Movie View">
+        </activity>
+        <activity
+            android:name=".NavigationalMenuAdmin"
+            android:label="Navigational Menu (Admin)">
+        </activity>
+        <activity
+            android:name=".ProfileViewAdmin"
+            android:label="User Profile (to Admin)">
+        </activity>
+        <activity
+            android:name=".ViewUsers"
+            android:label="View Users">
+        </activity>
+
+    </application>
+
+</manifest>
